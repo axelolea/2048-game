@@ -16,7 +16,7 @@ class Game {
             98: 'down'
         }
         this.colors = {
-            0: '#bbada0',
+            0: '#ccc0b3',
             2: '#eee4da',
             4: '#ece0c8',
             8: '#f2b179',
@@ -40,6 +40,7 @@ class Game {
             row.forEach(col => {
                 const colDiv = document.createElement('div')
                 if(col !== 0) colDiv.innerText = col.toString()
+                colDiv.style.backgroundColor = this.colors[col]
                 colDiv.classList.add('colTable')
                 rowDiv.append(colDiv)
             })
