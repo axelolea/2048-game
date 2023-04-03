@@ -15,6 +15,17 @@ class Game {
             40: 'down',
             98: 'down'
         }
+        this.colors = {
+            0: '#bbada0',
+            2: '#eee4da',
+            4: '#ece0c8',
+            8: '#f2b179',
+            16: '#f59563',
+            32: '#f67c5f',
+            64: '#f65e3b',
+            128: '#edcf72',
+            256: '#edcc61'
+        }
     }
 
     createTable (){
