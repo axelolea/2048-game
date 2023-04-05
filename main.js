@@ -153,7 +153,7 @@ class Game {
 
     rightMove(){
         this.backupTable.map((row, i) => {
-            const newRow = this.comparativeGroups(row.reverse())
+	    const newRow = this.comparativeGroups(row.slice().reverse())
             if(newRow === -1) return
             this.tableValues[i] = newRow.reverse()
         })
